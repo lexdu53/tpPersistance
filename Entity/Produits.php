@@ -9,11 +9,11 @@
 class Produits
 {
     private $id;
-    private $prix;
-    private $facet;
-    private $etagere;
     private $denomination;
-    private $absent;
+    
+     public function __constructor($denomination){
+         $this->denomination = $denomination;
+     }
 
     /**
      * @return mixed
@@ -30,55 +30,6 @@ class Produits
     {
         $this->id = $id;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getPrix()
-    {
-        return $this->prix;
-    }
-
-    /**
-     * @param mixed $prix
-     */
-    public function setPrix($prix)
-    {
-        $this->prix = $prix;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFacet()
-    {
-        return $this->facet;
-    }
-
-    /**
-     * @param mixed $facet
-     */
-    public function setFacet($facet)
-    {
-        $this->facet = $facet;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getEtagere()
-    {
-        return $this->etagere;
-    }
-
-    /**
-     * @param mixed $etagere
-     */
-    public function setEtagere($etagere)
-    {
-        $this->etagere = $etagere;
-    }
-
     /**
      * @return mixed
      */
@@ -94,22 +45,5 @@ class Produits
     {
         $this->denomination = $denomination;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getAbsent()
-    {
-        return $this->absent;
-    }
-
-    /**
-     * @param mixed $absent
-     */
-    public function setAbsent($absent)
-    {
-        $this->absent = $absent;
-    }
-
 
 }
