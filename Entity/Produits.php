@@ -11,9 +11,9 @@ class Produits
     private $id;
     private $denomination;
     
-     public function __constructor($denomination){
+    public function __constructor($denomination){
          $this->denomination = $denomination;
-     }
+    }
 
     /**
      * @return mixed

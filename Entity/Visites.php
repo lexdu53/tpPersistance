@@ -10,14 +10,13 @@ class Visites
 {
     private $id;
     private $date;
+    private $magasin;
+    private $produits=array();
+    private $commercial;
 
-
-    function getListeMagasin(){ //return list<Mgasins>
-
-    }
 
     function getListProduitVerifier(){//return list<Produits>
-
+        
     }
 
     /**
