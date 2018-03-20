@@ -13,6 +13,8 @@ session_start();
  * Date: 14/03/2018
  * Time: 12:06
  */
+
+//tuto WebStorage https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html
 header('Content-Type: application/json');
 
 
