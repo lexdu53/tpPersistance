@@ -61,20 +61,13 @@ class Commerciaux
         $this->prenom = $prenom;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getEstConnecte()
-    {
-        return $this->estConnecte;
-    }
 
     /**
      * @param mixed $estConnecte
      */
-    public function setEstConnecte($estConnecte)
+    public function isConnecte($estConnecte)
     {
-        $this->estConnecte = $estConnecte;
+        return $estConnecte;
     }
 
 
