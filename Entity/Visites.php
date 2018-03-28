@@ -5,20 +5,21 @@
  * Date: 20/03/2018
  * Time: 14:30
  */
-
+include_once "DAO/DaoProduitsVistes";
 class Visites
 {
     private $id;
     private $date;
-    private $magasin;
-    private $produits=array();
-    private $commercial;
+    private $magasin_id;
+    private $commercial_id;
 
-
-    function getListProduitVerifier(){//return list<Produits>
-        
+    public function __constructor($id, $date,$magasin_id,$commercial_id){
+        $this->id = $id;
+        $this->date= $date;
+        $this->magasin_id = $magasin_id;
+        $this->commercial_id = $commercial_id;
     }
-
+    
     /**
      * @return mixed
      */
@@ -51,7 +52,8 @@ class Visites
         $this->date = $date;
     }
 
-
-
+    public function getListProduitsVisites(){//return list<Produits>
+        $this->produits = DaoProduitsVisites::getListProduitsForThisVisite($this->id);
+    }
 
 }
