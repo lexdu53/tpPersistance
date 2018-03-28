@@ -77,4 +77,5 @@ class ProduitsMagasins extends Produits
     {
         $this->absent = $absent;
     }
+    
 }

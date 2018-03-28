@@ -18,8 +18,7 @@ class BDDConfiguration{
             
         
     }
-    
-    
+
     public function Connexion(){
         return $this->_PDO;
     }

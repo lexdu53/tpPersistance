@@ -10,18 +10,16 @@ class Visites
 {
     private $id;
     private $date;
-    private $magasin;
-    private $produits=array();
-    private $commercial;
+    private $magasin_id;
+    private $commercial_id;
 
-    public function __constructor(){
-        
+    public function __constructor($id, $date,$magasin_id,$commercial_id){
+        $this->id = $id;
+        $this->date= $date;
+        $this->magasin_id = $magasin_id;
+        $this->commercial_id = $commercial_id;
     }
     
-    public function getListProduitsVisites(){//return list<Produits>
-        $this->produits = DaoProduitsVisites::getListProduitsForThisVisite($this->id);
-    }
-
     /**
      * @return mixed
      */
@@ -54,7 +52,8 @@ class Visites
         $this->date = $date;
     }
 
-
-
+    public function getListProduitsVisites(){//return list<Produits>
+        $this->produits = DaoProduitsVisites::getListProduitsForThisVisite($this->id);
+    }
 
 }
