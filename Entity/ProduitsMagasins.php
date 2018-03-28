@@ -1,5 +1,5 @@
 <?php
-class ProduitsMagasins extends Produits
+class ProduitsMagasins
 {
     private $date;
     private $prix;
