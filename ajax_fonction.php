@@ -7,12 +7,18 @@ error_reporting(E_ALL);
 //echo "aaa";
 
 if (isset($_POST['Data'])){
-
-    echo( $_POST['Data']);
-
-   /* $function=$_POST['function'];
-    $object=$_POST['object'];
-    $DaoProduitMagasin = new DaoProduitMagasin();
-    $DaoProduitVisite= new DaoProduitsVisites();*/
+    foreach($_POST['Data'] as $key => $value){
+        $data = json_decode($value);
+        $monProduitVerifie = new ProduitsMagasins(date("Y-mm-dd"),$value["prix"],$value["facet"],$value["etagere"],$value["absent"],$value["visite_id"],$value["magasin_id"],$value["produit_id"]);
+        $DaoProduitMagasin = new DaoProduitMagasin();
+        
+        if(true)//si n'existe pas add
+            $DaoProduitMagasin->add($monProduitVerifie);
+        else{
+            $DaoProduitMagasin->update($monProduitVerifie);
+        }
+        
+    }
+    
 }
 
