@@ -10,7 +10,7 @@ function save_produit_magasin() {
         $.ajax({
             url: 'ajax_fonction.php',
             type: 'post',
-//            dataType: 'json',
+            dataType: 'json',
             data: {'Data': obj},
             success: function (data) {
                 //alert(data);

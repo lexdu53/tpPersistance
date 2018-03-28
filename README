@@ -1,10 +1,20 @@
-Mini Documentation :     Aucune information n'est remonter depuis une base de données (Manque de temps)    Lorsque le formulaire est envoyé, les données sont automatiquement enregistrées dans LocalStorage de FireFox  On commence par recuperer les données renseigner par le formulaire dans le fichier JS, les données sont ensuite enregistrés dans le navigateur grace a la base LocalStorage de Firefox. L’ensemble des informations sont enregistrés dans un objet qui est ensuite mis en relation avec la clé créée auparavant dans la base LocalStorage.
+Mini Documentation :     Le projet n'est pas fini et aucune information n'est remonter depuis une base de données (Manque de temps).
 
-L’ensemble des données est ensuite envoyé a la base de données SQL coté serveur (Fichier PHP)
+   Lorsque le formulaire est envoyé, les données sont automatiquement enregistrées dans LocalStorage de FireFox.
+  On commence par récupérer les données renseignées par le formulaire dans le fichier JS,
+les données sont ensuite enregistrés dans le navigateur grâce a la mémoire du navigateur (LocalStorage) de Firefox.
+L’ensemble des informations sont enregistrés dans un objet qui est ensuite mis en relation avec la clé créée auparavant dans la base LocalStorage.
+
+L’ensemble des données est ensuite envoyé à la base de données SQL coté serveur (Fichier PHP) qui créée ou mets à jour les informations.
+On supprimer les données sur le navigateur si le serveur retourne une confirmation comme quoi tous ces bien passé (connexion à la BDD,
+accès à la database...), sinon les données sont gardées dans le navigateur.
+
+La communication avec la base de données est géré de façon asynchrone grâce à la notion de promise et l'envoie de requêtes client, serveur
+avec Ajax.
 
 
 
-jeremy.perrouault@ascadis.fr
+
 
 
 

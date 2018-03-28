@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="31064b86-e4a8-46a0-a446-d0c809a80e75" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/DAO/DaoProduitMagasin.php" afterPath="$PROJECT_DIR$/DAO/DaoProduitMagasin.php" />
+      <change beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change beforePath="$PROJECT_DIR$/ajax_fonction.php" afterPath="$PROJECT_DIR$/ajax_fonction.php" />
+      <change beforePath="$PROJECT_DIR$/js/Async.js" afterPath="$PROJECT_DIR$/js/Async.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +23,19 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="135">
               <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding>
-                <marker date="1522248015875" expanded="true" signature="798:2050" ph="..." />
-                <marker date="1522248015875" expanded="true" signature="798:2071" ph="..." />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manifest.manifest" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manifest.manifest">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -33,12 +44,23 @@
         <entry file="file://$PROJECT_DIR$/DAO/DaoProduitMagasin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
-                <marker date="1522240753699" expanded="true" signature="418:550" ph="INSERT INTO produitMagasin... " />
-                <marker date="1522240753699" expanded="true" signature="1120:1262" ph="UPDATE produitMagasin... " />
-                <marker date="1522240753699" expanded="true" signature="1874:1913" ph="DELETE FROM produitMagasin... " />
+                <marker date="1522251209368" expanded="true" signature="420:552" ph="INSERT INTO produitMagasin... " />
+                <marker date="1522251209368" expanded="true" signature="1122:1264" ph="UPDATE produitMagasin... " />
+                <marker date="1522251209368" expanded="true" signature="1876:1915" ph="DELETE FROM produitMagasin... " />
+                <marker date="1522251209368" expanded="true" signature="2230:2264" ph="Select * Fro... produitMagasin" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_fonction.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax_fonction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax_fonction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -69,8 +91,28 @@
       <file leaf-file-name="Async.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Async.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="-350">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProduitsMagasins.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Entity/ProduitsMagasins.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -98,8 +140,10 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Async.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/ajax_fonction.php" />
         <option value="$PROJECT_DIR$/js/Async.js" />
+        <option value="$PROJECT_DIR$/ajax_fonction.php" />
+        <option value="$PROJECT_DIR$/DAO/DaoProduitMagasin.php" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -197,11 +241,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/DAO/DaoProduitMagasin.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Entity/ProduitsMagasins.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/ajax_fonction.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/js/Async.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/manifest.manifest</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -209,9 +254,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/imgs/offline.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/imgs/online.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/styles.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -332,7 +375,7 @@
       <workItem from="1522172251617" duration="488000" />
       <workItem from="1522220620478" duration="846000" />
       <workItem from="1522221891378" duration="4226000" />
-      <workItem from="1522244833337" duration="1131000" />
+      <workItem from="1522244833337" duration="3803000" />
     </task>
     <task id="LOCAL-00001" summary="init lib promise">
       <created>1521560028822</created>
@@ -383,11 +426,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522244844363</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&#10;up">
+      <created>1522248025286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522248025286</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11678000" />
+    <option name="totallyTimeSpent" value="14350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -435,33 +485,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Models/BDDConfiguration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/persistance.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Entity/Produits.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Entity/ProduitsMagasins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Entity/Visites.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -669,20 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Entity/ProduitsMagasins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bdd/base.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/BDDConfiguration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -692,26 +701,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Async.js" />
-    <entry file="file://$PROJECT_DIR$/DAO/DaoProduitMagasin.php">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522240753699" expanded="true" signature="418:550" ph="INSERT INTO produitMagasin... " />
-            <marker date="1522240753699" expanded="true" signature="1120:1262" ph="UPDATE produitMagasin... " />
-            <marker date="1522240753699" expanded="true" signature="1874:1913" ph="DELETE FROM produitMagasin... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/ajax_fonction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <marker date="1522248015875" expanded="true" signature="798:2050" ph="..." />
-            <marker date="1522248015875" expanded="true" signature="798:2071" ph="..." />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +728,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/bdd/base.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Entity/ProduitsMagasins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/DaoProduitMagasin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <marker date="1522251209368" expanded="true" signature="420:552" ph="INSERT INTO produitMagasin... " />
+            <marker date="1522251209368" expanded="true" signature="1122:1264" ph="UPDATE produitMagasin... " />
+            <marker date="1522251209368" expanded="true" signature="1876:1915" ph="DELETE FROM produitMagasin... " />
+            <marker date="1522251209368" expanded="true" signature="2230:2264" ph="Select * Fro... produitMagasin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -734,18 +773,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Async.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax_fonction.php">
+    <entry file="file://$PROJECT_DIR$/manifest.manifest">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
