@@ -1,45 +1,20 @@
-
-function test() {
-    $.ajax({ url: 'ajax_fonction.php',
-        data: { 'integration': 'ts' },
-        type: "POST",
-        success: function(output) {
-        }
-    });
-
-}
-function testConnection() {
-
-    var isMomHappy = true;
-    var statutConnection = new Promise(
-        function (resolve, reject) {
-            if (test()) {//Si il ya une con
-                var phone = {
-                    brand: 'Samsung',
-                    color: 'black'
-                };
-                resolve(phone);
-            } else {
-                var reason = new Error('mom is not happy');
-                reject(reason);
+function save_produit_magasin() {
+    return new Promise(function (resolve, reject) {
+        $.ajax({
+            url: 'ajax_fonction.php',
+            type: 'post',
+//            dataType: 'json',
+            data: {'function': 'ts'},
+            success: function (data) {
+                alert(data);
+            },
+            error: function (xhr) {
+                reject(xhr)
             }
 
-        }
-    );
-    
-}
-
-// call our promise
-function askConnection() {
-    testConnection
-        .then(function (fulfilled) {
-            return("coucou");
-        })
-        .catch(function (error) {
-            console.log(error.message);
         });
+    });
 }
-
 
 function set() {
         key = document.forms["produit"].commercial_id.value  +"_"+ document.forms["produit"].magasin_id.value+"_"+ document.forms["produit"].produit_id.value;
@@ -54,6 +29,7 @@ function set() {
         };
 	localStorage.setItem(key, data);
 }
+
 function get() {
 	key = document.forms["editor"].key.value;
 	document.forms["editor"].data.value = localStorage.getItem(key);
@@ -71,3 +47,4 @@ function loaded() {
     document.body.addEventListener("offline", function () { updateOnlineStatus("offline") }, false);
     document.body.addEventListener("online", function () { updateOnlineStatus("online") }, false);
 }
+
