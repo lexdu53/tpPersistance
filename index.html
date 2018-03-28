@@ -14,30 +14,28 @@ and open the template in the editor.
         <script type="text/javascript" src="js/Async.js"></script>
     </head>
     <body> 
-        <script>
-	function set() {
-                key = document.forms["produit"].produit_id.value;
-		data={
-                    "date":document.forms["produit"].date.value,
-                    "prix":document.forms["produit"].prix.value,
-                    "facet":document.forms["produit"].facet.value,                  
-                    "etagere":document.forms["produit"].etagere.value,
-                    "absent":document.forms["produit"].absent.value
-
-                };
-		localStorage.setItem(key, data);
-		document.forms["editor"].data.value = "";
-	}
-	function get() {
-		key = document.forms["editor"].key.value;
-		document.forms["editor"].data.value = localStorage.getItem(key);
-	}
-        </script>
         <form method="post" action="#" name="produit" onsubmit="set();test()">
             
+            <label for="commercial_id">Identifiant du commercial :</label>
+            <input type="text" id="commercial_id" name="commercial_id" size="30" maxlength="10" required/>
+            <br/>
+            <label for="magasin_id">Identifiant du magasin :</label>
+            <input type="text" id="magasin_id" name="magasin_id" size="30" maxlength="10" required/>
+            <br/>
             <label for="produit_id">Identifiant du produit :</label>
-            <input type="text" id="produit_id" name="produit_id" id="pseudo" size="30" maxlength="10" />
-            
+            <input type="text" id="produit_id" name="produit_id" size="30" maxlength="10" required/>
+            <br/>
+            <label for="absent">Produit absent :</label>
+            <input type="checkbox" id="absent" name="absent" />
+            <br/>
+            <label for="prix">Prix du Produit :</label>
+            <input type="text" id="prix" name="prix" size="30" maxlength="10" />
+            <br/>
+            <label for="facet">Nombre de facets :</label>
+            <input type="text" id="facet" name="facet"  size="30" maxlength="10" />
+            <br/>
+            <label for="etagere">Etagère :</label>
+            <input type="text" id="etagere" name="etagere" size="30" maxlength="10" />            
             
             <input type="submit"/>
         
