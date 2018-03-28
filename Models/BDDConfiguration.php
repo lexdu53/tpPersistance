@@ -14,9 +14,6 @@ class BDDConfiguration{
         } catch (Exception $ex) {
            $this->_PDO = new PDO($this->_sqlite_path, '', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,));
         }
-
-            
-        
     }
 
     public function Connexion(){

@@ -13,8 +13,8 @@ session_start();
  * Time: 12:06
  */
 //tuto WebStorage https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html
-header('Content-Type: application/json');
 include_once '/Models/BDDConfiguration.php';
-$db = BDDConfiguration::getInstance();
+/*$db = BDDConfiguration::getInstance();
 $pdo = $db->Connexion();
-print_r($pdo);
+print_r($pdo);*/
+
