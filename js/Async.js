@@ -1,9 +1,11 @@
 
 function test() {
-    $.ajax({ url: 'ajax_fonction.php',
-        data: { 'integration': 'ts' },
+    $.ajax({ url: 'http://localhost:8888/tpPersistance/ajax_fonction.php',
+        data: { 'function': 'ts' },
         type: "POST",
-        success: function(output) {
+        success:
+            function(output) {
+                alert("Donnees retournees : " + output );
         }
     });
 
