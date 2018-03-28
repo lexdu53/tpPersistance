@@ -4,6 +4,8 @@ CACHE MANIFEST
 CACHE:
 index.html
 js/Async.js
+imgs/online.png
+imgs/offline.png
 
 # Fichier JS : jQuery
 https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
