@@ -58,3 +58,16 @@ function get() {
 	key = document.forms["editor"].key.value;
 	document.forms["editor"].data.value = localStorage.getItem(key);
 }
+
+function updateOnlineStatus(msg) {
+    var status = document.getElementById("status");
+    var condition = navigator.onLine ? "online" : "offline";
+    status.setAttribute("class", condition);
+    var state = document.getElementById("state");
+}
+
+function loaded() {
+    updateOnlineStatus("load");
+    document.body.addEventListener("offline", function () { updateOnlineStatus("offline") }, false);
+    document.body.addEventListener("online", function () { updateOnlineStatus("online") }, false);
+}
