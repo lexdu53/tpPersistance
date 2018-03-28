@@ -50,8 +50,8 @@ function set() {
             "produit_id":document.forms["produit"].produit_id.value,
             "prix":document.forms["produit"].prix.value,
             "facet":document.forms["produit"].facet.value,                  
-            "etagere":document.forms["produit"].etagere.value,
-            "absent":document.forms["produit"].absent.value
+             "etagere":document.forms["produit"].etagere.value,
+             "absent":document.forms["produit"].absent.value
         };
 	localStorage.setItem(key, data);
 }
