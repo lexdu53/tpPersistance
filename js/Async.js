@@ -1,8 +1,11 @@
 function save_produit_magasin() {
-   /* for (var i=1; i <= localStorage.length; i++)  {
-        alert(localStorage.getItem(i));
-    }*/
-     localStorage.clear();
+    var obj=[];
+    for (var i=1; i <= localStorage.length; i++)  {
+        obj[i] = localStorage.getItem(i);
+    }
+    alert(obj["14"]);
+    console.log(obj["14"]);
+     //localStorage.clear();
     return new Promise(function (resolve, reject) {
         $.ajax({
             url: 'ajax_fonction.php',
@@ -42,7 +45,7 @@ function set() {
              "absent":document.forms["produit"].absent.value
         };
         localStorage.setItem("num",key);
-	localStorage.setItem(key, data);
+	localStorage.setItem(key, JSON.stringify(data));
            
 
 }
