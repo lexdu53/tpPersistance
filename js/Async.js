@@ -1,10 +1,9 @@
+
 function test() {
     $.ajax({ url: 'ajax_fonction.php',
-        data: { 'function': 'ts' },
+        data: { 'integration': 'ts' },
         type: "POST",
         success: function(output) {
-            alert(output);
-            //localStorage.clear();
         }
     });
 
@@ -41,6 +40,7 @@ function askConnection() {
         });
 }
 
+
 function set() {
         key = document.forms["produit"].commercial_id.value  +"_"+ document.forms["produit"].magasin_id.value+"_"+ document.forms["produit"].produit_id.value;
 	data={
@@ -49,12 +49,11 @@ function set() {
             "produit_id":document.forms["produit"].produit_id.value,
             "prix":document.forms["produit"].prix.value,
             "facet":document.forms["produit"].facet.value,                  
-            "etagere":document.forms["produit"].etagere.value,
-            "absent":document.forms["produit"].absent.value
+             "etagere":document.forms["produit"].etagere.value,
+             "absent":document.forms["produit"].absent.value
         };
 	localStorage.setItem(key, data);
 }
-
 function get() {
 	key = document.forms["editor"].key.value;
 	document.forms["editor"].data.value = localStorage.getItem(key);
