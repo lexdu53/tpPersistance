@@ -33,7 +33,7 @@ and open the template in the editor.
 		document.forms["editor"].data.value = localStorage.getItem(key);
 	}
         </script>
-        <form method="post" action="#" name="produit" onsubmit="set()">
+        <form method="post" action="#" name="produit" onsubmit="set();test()">
             
             <label for="produit_id">Identifiant du produit :</label>
             <input type="text" id="produit_id" name="produit_id" id="pseudo" size="30" maxlength="10" />

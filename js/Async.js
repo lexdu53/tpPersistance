@@ -1,10 +1,14 @@
-function test(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "localhost/tpPersistance/ajax_fonction.php", false); 
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("action=connection");
-}
 
+function test() {
+    $.ajax({ url: 'ajax_fonction.php',
+        data: { 'function': 'ts' },
+        type: "POST",
+        success: function(output) {
+            alert(output);
+        }
+    });
+
+}
 function testConnection() {
 
     var isMomHappy = true;
