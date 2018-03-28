@@ -1,8 +1,14 @@
-function test(){
-    var req = new XMLHttpRequest();
-    req.open('GET', 'localhost/ajax_fonction.php?action=connection', false); 
-}
 
+function test() {
+    $.ajax({ url: 'ajax_fonction.php',
+        data: { 'function': 'ts' },
+        type: "POST",
+        success: function(output) {
+            alert(output);
+        }
+    });
+
+}
 function testConnection() {
 
     var isMomHappy = true;

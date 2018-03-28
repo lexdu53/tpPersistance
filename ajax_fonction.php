@@ -1,14 +1,12 @@
 <?php
-$actionSelect = $_GET["action"];
-switch ($actionSelect){
-    case 'connection':
-        echo "coucou";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-    break;  
-    default :
-        echo "default";
-}
+$bbdConnexion = BDDConfiguration::getInstance();
+$bbdConnexion->Connexion();
 
-function connection(){
-    return '';
+
+if(isset($_POST['function'])) {
+    echo $_POST['function'];
 }
