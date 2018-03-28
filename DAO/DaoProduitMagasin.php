@@ -69,4 +69,17 @@ class DaoProduitMagasin
        }
     }
     
+    function get($com_id,$mag_id,$prod_id){
+
+        $pdo = $this->bdd->Connexion();
+        $req = $pdo->prepare('Select * From produitMagasin WHERE ');
+
+        $req->execute(array(
+                'visite_id' => $produitMagasin->prix,
+                'magasin_id' => $produitMagasin->nbFacet,
+                'produit_id' => $produitMagasin->etagere,
+        ));
+        return $req;
+    }
+    
 }

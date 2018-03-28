@@ -36,13 +36,13 @@ function set() {
         }
         key = parseInt(num)+1;
 	data={
-            "commercial_id":document.forms["produit"].commercial_id.value,
+            "visite_id":document.forms["produit"].visite_id.value,
             "magasin_id":document.forms["produit"].magasin_id.value,
             "produit_id":document.forms["produit"].produit_id.value,
             "prix":document.forms["produit"].prix.value,
             "facet":document.forms["produit"].facet.value,                  
-             "etagere":document.forms["produit"].etagere.value,
-             "absent":document.forms["produit"].absent.value
+            "etagere":document.forms["produit"].etagere.value,
+            "absent":document.forms["produit"].absent.checked
         };
         localStorage.setItem("num",key);
 	localStorage.setItem(key, JSON.stringify(data));
