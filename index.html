@@ -15,9 +15,10 @@ and open the template in the editor.
 
         </script>
     </head>
-    <body> 
+
+    <body onload="loaded()">
         <form method="post" action="#" name="produit" onsubmit="set();save_produit_magasin(); return false">
-            
+
             <label for="commercial_id">Identifiant du commercial :</label>
             <input type="text" id="commercial_id" name="commercial_id" size="30" maxlength="10" required/>
             <br/>
