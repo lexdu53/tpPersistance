@@ -1,6 +1,6 @@
 
 function test() {
-    $.ajax({ url: 'http://localhost:8888/tpPersistance/ajax_fonction.php',
+    $.ajax({ url: 'ajax_fonction.php',
         data: { 'integration': 'ts' },
         type: "POST",
         success: function(output) {
