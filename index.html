@@ -9,16 +9,41 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/Async.js"></script>
     </head>
-    <body>
-        
-        <form method="post" action="#" onSubmit="test()">
+    <body> private $date;
+    private $prix;
+    private $facet;
+    private $etagere;
+    private $absent;
+        <script>
+	function set() {
+                key = document.forms["produit"].produit_id.value;
+		data={
+                    "date":document.forms["produit"].date.value,
+                    "prix":document.forms["produit"].prix.value,
+                    "facet":document.forms["produit"].facet.value,                  
+                    "etagere":document.forms["produit"].etagere.value,
+                    "absent":document.forms["produit"].absent.value
+
+                };
+		localStorage.setItem(key, data);
+		document.forms["editor"].data.value = "";
+	}
+	function get() {
+		key = document.forms["editor"].key.value;
+		document.forms["editor"].data.value = localStorage.getItem(key);
+	}
+        </script>
+        <form method="post" action="#" name="produit" onsubmit="set()">
             
-        <label for="produit">Produit :</label>
-        <input type="text" name="produit" id="pseudo" size="30" maxlength="10" />
-        <input type="submit"/>
+            <label for="produit_id">Identifiant du produit :</label>
+            <input type="text" id="produit_id" name="produit_id" id="pseudo" size="30" maxlength="10" />
+            
+            
+            <input type="submit"/>
         
         </form>
         

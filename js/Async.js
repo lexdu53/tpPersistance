@@ -1,6 +1,8 @@
 function test(){
-    var req = new XMLHttpRequest();
-    req.open('GET', 'localhost/ajax_fonction.php?action=connection', false); 
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "localhost/tpPersistance/ajax_fonction.php", false); 
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("action=connection");
 }
 
 function testConnection() {
