@@ -1,3 +1,20 @@
+function save_produit_magasin() {
+    return new Promise(function (resolve, reject) {
+        $.ajax({
+            url: 'ajax_fonction.php',
+            type: 'post',
+//            dataType: 'json',
+            data: {'function': 'ts'},
+            success: function (data) {
+                alert(data);
+            },
+            error: function (xhr) {
+                reject(xhr)
+            }
+
+        });
+    });
+}
 
 function set() {
         key = document.forms["produit"].commercial_id.value  +"_"+ document.forms["produit"].magasin_id.value+"_"+ document.forms["produit"].produit_id.value;
@@ -12,4 +29,3 @@ function set() {
         };
 	localStorage.setItem(key, data);
 }
-
