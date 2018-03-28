@@ -5,7 +5,7 @@
  * Date: 20/03/2018
  * Time: 14:30
  */
-
+include_once "DAO/DaoProduitsVistes";
 class Visites
 {
     private $id;
@@ -14,9 +14,12 @@ class Visites
     private $produits=array();
     private $commercial;
 
-
-    function getListProduitVerifier(){//return list<Produits>
+    public function __constructor(){
         
+    }
+    
+    public function getListProduitsVisites(){//return list<Produits>
+        $this->produits = DaoProduitsVisites::getListProduitsForThisVisite($this->id);
     }
 
     /**
