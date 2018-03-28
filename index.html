@@ -11,9 +11,12 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/Async.js"></script>
+        <script type="text/javascript" >
+
+        </script>
     </head>
     <body> 
-        <form method="post" action="#" name="produit" onsubmit="save_produit_magasin(); return false">
+        <form method="post" action="#" name="produit" onsubmit="set();save_produit_magasin(); return false">
             
             <label for="commercial_id">Identifiant du commercial :</label>
             <input type="text" id="commercial_id" name="commercial_id" size="30" maxlength="10" required/>
