@@ -161,14 +161,6 @@
               <item name="tpPersistance" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-<<<<<<< HEAD
-=======
-            <path>
-              <item name="tpPersistance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpPersistance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
->>>>>>> 2e6a2665ccdb12a983a7f75fe054f50835a522f7
           </expand>
           <select />
         </subPane>

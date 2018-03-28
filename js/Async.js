@@ -1,4 +1,8 @@
-// Init promise
+function test(){
+    var req = new XMLHttpRequest();
+    req.open('GET', 'localhost/ajax_fonction.php?action=connection', false); 
+}
+
 function testConnection() {
 
     var isMomHappy = true;
