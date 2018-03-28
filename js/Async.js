@@ -2,7 +2,7 @@ function save_produit_magasin() {
    /* for (var i=1; i <= localStorage.length; i++)  {
         alert(localStorage.getItem(i));
     }*/
-     //localStorage.clear();
+     localStorage.clear();
     return new Promise(function (resolve, reject) {
         $.ajax({
             url: 'ajax_fonction.php',
@@ -31,7 +31,7 @@ function set() {
             localStorage.setItem("num","0");
             num = localStorage.getItem("num");
         }
-        key = parseInt(num+1);
+        key = parseInt(num)+1;
 	data={
             "commercial_id":document.forms["produit"].commercial_id.value,
             "magasin_id":document.forms["produit"].magasin_id.value,
