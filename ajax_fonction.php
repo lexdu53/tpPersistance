@@ -12,9 +12,5 @@ if (isset($_POST['integration'])){
     $object=$_POST['object'];
     $DaoProduitMagasin = new DaoProduitMagasin();
     $DaoProduitVisite= new DaoProduitsVisites();
-
-
-
-
 }
 

@@ -1,10 +1,10 @@
-
 function test() {
     $.ajax({ url: 'ajax_fonction.php',
         data: { 'function': 'ts' },
         type: "POST",
         success: function(output) {
-        storage.clear();
+            alert(output);
+            //localStorage.clear();
         }
     });
 
@@ -54,6 +54,7 @@ function set() {
         };
 	localStorage.setItem(key, data);
 }
+
 function get() {
 	key = document.forms["editor"].key.value;
 	document.forms["editor"].data.value = localStorage.getItem(key);
