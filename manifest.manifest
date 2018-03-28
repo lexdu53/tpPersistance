@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# Comment
+ 
+CACHE:
+index.html
+js/Async.js
+
+# Fichier JS : jQuery
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+
+FALLBACK:
+
+
+NETWORK:
+/ajax_fonction.php
