@@ -4,7 +4,7 @@ function test() {
         data: { 'function': 'ts' },
         type: "POST",
         success: function(output) {
-            alert(output);
+        storage.clear();
         }
     });
 
@@ -14,7 +14,7 @@ function testConnection() {
     var isMomHappy = true;
     var statutConnection = new Promise(
         function (resolve, reject) {
-            if (isMomHappy) {
+            if (test()) {//Si il ya une con
                 var phone = {
                     brand: 'Samsung',
                     color: 'black'

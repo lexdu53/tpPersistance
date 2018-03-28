@@ -17,43 +17,56 @@ class DaoProduitMagasin
     
     function add($produitMagasin){
 
+        try{
         $pdo = $this->bdd->Connexion();
-        $req = $pdo->prepare('INSERT INTO produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence');
+            $req = $pdo->prepare('INSERT INTO produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence');
 
-        $req->execute(array(
-            'nvprix' => $produitMagasin->prix,
-            'facet' => $produitMagasin->nbFacet,
-            'etagere' => $produitMagasin->etagere,
-            'denomination' => $produitMagasin->denomination,
-            'presence' => $produitMagasin->presence
-        ));
-        return $req;
+            $req->execute(array(
+                'nvprix' => $produitMagasin->prix,
+                'facet' => $produitMagasin->nbFacet,
+                'etagere' => $produitMagasin->etagere,
+                'denomination' => $produitMagasin->denomination,
+                'presence' => $produitMagasin->presence
+            ));
+            return $req;
+        }catch (mysqli_sql_exception $e){
+            echo $e;
+        }
+
     }
 
     function update($produitMagasin){
 
-        $pdo = $this->bdd->Connexion();
-        $req = $pdo->prepare('UPDATE produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence WHERE id = :id');
-        $req->execute(array(
-            'id' => $produitMagasin->id,
-            'nvprix' => $produitMagasin->prix,
-            'facet' => $produitMagasin->nbFacet,
-            'etagere' => $produitMagasin->etagere,
-            'denomination' => $produitMagasin->denomination,
-            'presence' => $produitMagasin->presence
-        ));
+        try{
+            $pdo = $this->bdd->Connexion();
+            $req = $pdo->prepare('UPDATE produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence WHERE id = :id');
+            $req->execute(array(
+                'id' => $produitMagasin->id,
+                'nvprix' => $produitMagasin->prix,
+                'facet' => $produitMagasin->nbFacet,
+                'etagere' => $produitMagasin->etagere,
+                'denomination' => $produitMagasin->denomination,
+                'presence' => $produitMagasin->presence
+            ));
 
-        return $req;
+            return $req;
+        }catch (mysqli_sql_exception $e){
+            echo $e;
+        }
     } 
 
     function delete($produitMagasin){
 
-        $pdo = $this->bdd->Connexion();
-        $req = $pdo->prepare('DELETE FROM produitMagasin WHERE id=:id');
-        $req->execute(array(
-            'id' => $produitMagasin->id,
-        ));
-        return $req;
+       try{
+           $pdo = $this->bdd->Connexion();
+           $req = $pdo->prepare('DELETE FROM produitMagasin WHERE id=:id');
+           $req->execute(array(
+               'id' => $produitMagasin->id,
+           ));
+           return $req;
+       }catch (mysqli_sql_exception $e){
+           echo $e;
+       }
     }
     
 }
