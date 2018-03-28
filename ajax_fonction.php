@@ -4,11 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-
-echo "coc";
-
+echo "aaa";
 if (isset($_POST['function'])){
-    echo "lol";
+    return "lol";
 
     echo $_POST['integration'];
 
