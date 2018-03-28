@@ -1,0 +1,11 @@
+Mini Documentation :     Aucune information n'est remonter depuis une base de données (Manque de temps)    Lorsque le formulaire est envoyé, les données sont automatiquement enregistrées dans LocalStorage de FireFox  On commence par recuperer les données renseigner par le formulaire dans le fichier JS, les données sont ensuite enregistrés dans le navigateur grace a la base LocalStorage de Firefox. L’ensemble des informations sont enregistrés dans un objet qui est ensuite mis en relation avec la clé créée auparavant dans la base LocalStorage.
+
+L’ensemble des données est ensuite envoyé a la base de données SQL coté serveur (Fichier PHP)
+
+
+
+jeremy.perrouault@ascadis.fr
+
+
+
+
