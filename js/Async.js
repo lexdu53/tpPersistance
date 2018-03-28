@@ -1,4 +1,14 @@
-// Init promise
+
+function test() {
+    $.ajax({ url: 'ajax_fonction.php',
+        data: { 'function': 'ts' },
+        type: "POST",
+        success: function(output) {
+            alert(output);
+        }
+    });
+
+}
 function testConnection() {
 
     var isMomHappy = true;

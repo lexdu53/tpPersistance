@@ -9,10 +9,15 @@ include ("../Models/BDDConfiguration.php");
 
 class DaoProduitMagasin
 {
+    private $bdd ;
+    
+    public function DaoProduitsVisites(){
+        $this->bdd = BDDConfiguration::getInstance();
+    }
     
     function add($produitMagasin){
-        $bdd = BDDConfiguration::getInstance();
-        $pdo = $bdd->Connexion();
+
+        $pdo = $this->bdd->Connexion();
         $req = $pdo->prepare('INSERT INTO produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence');
 
         $req->execute(array(
@@ -26,8 +31,8 @@ class DaoProduitMagasin
     }
 
     function update($produitMagasin){
-        $bdd = BDDConfiguration::getInstance();
-        $pdo = $bdd->Connexion();
+
+        $pdo = $this->bdd->Connexion();
         $req = $pdo->prepare('UPDATE produitMagasin SET prix = :nvprix, facet = :facet,etagere = :etagere, denomination = :denomination, presence = :presence WHERE id = :id');
         $req->execute(array(
             'id' => $produitMagasin->id,
@@ -42,8 +47,8 @@ class DaoProduitMagasin
     } 
 
     function delete($produitMagasin){
-        $bdd = BDDConfiguration::getInstance();
-        $pdo = $bdd->Connexion();
+
+        $pdo = $this->bdd->Connexion();
         $req = $pdo->prepare('DELETE FROM produitMagasin WHERE id=:id');
         $req->execute(array(
             'id' => $produitMagasin->id,
@@ -51,12 +56,4 @@ class DaoProduitMagasin
         return $req;
     }
     
-    function synchronize(){
-        $bdd = BDDConfiguration::getInstance();
-        if(true){
-            
-        }
-    }
-
-
 }
